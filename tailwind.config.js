@@ -15,8 +15,8 @@ module.exports = {
         "opaque-black": "rgba(0,0,0,0.35)"
       },
       backgroundImage: (theme) => ({
-        "gradient-rainbow": "linear-gradient(81.66deg, #00b5ee 7.21%, #ff45a4 45.05%, #ffba00 78.07%)",
-        "gradient-rainblue": "linear-gradient(90deg, #24cbff 14.53%, #fc59ff 69.36%, #ffbd0c 117.73%)"
+        "gradient-rainbow": "linear-gradient(81.66deg, #587b6d 7.21%, #ffb0f2 45.05%, #ffd9cb 78.07%)",
+        "gradient-raingreen": "linear-gradient(90deg, #587b6d 14.53%, #ffd9cb 69.36%, #ffb0f2 117.73%)"
 
       }),
       fontFamily: {
