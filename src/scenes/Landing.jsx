@@ -17,7 +17,7 @@ const Landing = ({setSelectedPage}) => {
                 {isAboveMediumScreens ? (
                     <div
                         className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
-                            before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full 
+                            before:rounded-t-[400px] before:w-full before:max-w-[600px] before:h-full 
                             before:border-2 before:border-green before:z-[-1]"
                     >
                         <img
