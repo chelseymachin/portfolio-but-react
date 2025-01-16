@@ -1,9 +1,7 @@
 import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const Projects = () => {
-    const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
     return (
         <section id="projects" className="pt-10 pb-24">
           {/* header section */}
@@ -20,39 +18,18 @@ const Projects = () => {
                     }}
                 >
                     <p className="font-playfair text-blush font-semibold text-4xl mb-5">
-                        PERSONAL PROJECTS
+                        PROJECTS
                     </p>
                     <LineGradient />
                     <p className="mt-10 mb-7">
-                        ALL MY PROJECTS ARE BELONG TO ME
+                        All projects below link to my indivudal github repositories.  Some of these projects are also individually hosted on various platforms.  If there is a live hosting of the project, that link will be available below the repository link.
                     </p>
                 </motion.div>
             </div>  
             {/* projects section */}
             <div className="md:flex md:justify-between mt-16 gap-32">
-                {/* example project #1 */} 
+                {/* project #1 */} 
                 <div className="flex-col items-center">
-                    <div className="mt-16 md:mt-0">
-                        {isAboveMediumScreens ? (
-                            <div
-                            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
-                                before:w-full before:h-full before:border-2
-                            before:border-green before:z-[-1]"
-                        >
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-1.jpeg"
-                            />
-                        </div>
-                        ) : (
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-1.jpeg"
-                            />
-                        )}
-                    </div>
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -64,42 +41,21 @@ const Projects = () => {
                             visible: { opacity: 1, y: 0 },
                         }}
                     >
-                        <div className="relative h-16">
+                        <div className="relative h-18">
                             <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">a project name here</p>
+                                <p className="font-playfair font-semibold text-blush text-3xl">Fake News Detector</p>
                             </div>
                         </div>
-                        <p>
+                        <div>
                             <ul>
                                 <li>main tech points</li>
                                 <li>features</li>
                             </ul>
-                        </p>
+                        </div>
                     </motion.div>
                 </div>
                 {/* example project #2 */} 
                 <div className="flex-col items-center">
-                    <div className="mt-16 md:mt-0">
-                        {isAboveMediumScreens ? (
-                            <div
-                            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
-                                before:w-full before:h-full before:border-2
-                            before:border-green before:z-[-1]"
-                        >
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-2.jpeg"
-                            />
-                        </div>
-                        ) : (
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-2.jpeg"
-                            />
-                        )}
-                    </div>
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -111,42 +67,21 @@ const Projects = () => {
                             visible: { opacity: 1, y: 0 },
                         }}
                     >
-                        <div className="relative h-16">
+                        <div className="relative h-18">
                             <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">a project name here</p>
+                                <p className="font-playfair font-semibold text-blush text-3xl">Package Delivery Service</p>
                             </div>
                         </div>
-                        <p>
+                        <div>
                             <ul>
                                 <li>main tech points</li>
                                 <li>features</li>
                             </ul>
-                        </p>
+                        </div>
                     </motion.div>
                 </div>
                 {/* example project #3 */} 
                 <div className="flex-col items-center">
-                    <div className="mt-16 md:mt-0">
-                        {isAboveMediumScreens ? (
-                            <div
-                            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 
-                                before:w-full before:h-full before:border-2
-                            before:border-green before:z-[-1]"
-                        >
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-3.jpeg"
-                            />
-                        </div>
-                        ) : (
-                            <img
-                                alt="skills"
-                                className="z-10"
-                                src="assets/project-3.jpeg"
-                            />
-                        )}
-                    </div>
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -158,17 +93,16 @@ const Projects = () => {
                             visible: { opacity: 1, y: 0 },
                         }}
                     >
-                        <div className="relative h-16">
+                        <div className="relative h-18">
                             <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">a project name here</p>
-                            </div>
+                                <p className="font-playfair font-semibold text-blush text-3xl">Appointment Manager</p>                            </div>
                         </div>
-                        <p>
+                        <div>
                             <ul>
                                 <li>main tech points</li>
                                 <li>features</li>
                             </ul>
-                        </p>
+                        </div>
                     </motion.div>
                 </div>
             </div>

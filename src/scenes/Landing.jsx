@@ -23,14 +23,14 @@ const Landing = ({setSelectedPage}) => {
                         <img
                             alt="profile"
                             className="hover:filter hover:grayscale transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-                            src="assets/profile-image.png"
+                            src="assets/profile-image2.png"
                         />
                     </div>
                 ) : (
                     <img
                         alt="profile"
                         className="hover:filter hover:grayscale transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-                        src="assets/profile-image.png"
+                        src="assets/profile-image2.png"
                     />
                 )}
             </div>
