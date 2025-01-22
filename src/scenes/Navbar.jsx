@@ -60,7 +60,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                         />
                         <Link
                             page="Resume"
-                            href="../assets/resume.pdf"
+                            href="assets/resume.pdf"
                             isExternal={true}
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
@@ -104,7 +104,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                                 />
                                 <Link
                                     page="Resume"
-                                    href="../asssets/resume.pdf"
+                                    href="asssets/resume.pdf"
                                     isExternal={true}
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage}
