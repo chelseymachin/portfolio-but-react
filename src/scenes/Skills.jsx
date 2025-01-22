@@ -25,7 +25,7 @@ const Skills = () => {
                     </p>
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        I have professional experience in a breadth of technologies. I'm currently working at Jamf on a platform services team building out cloud services for enterprise pain points.
+                        I have professional experience in a breadth of technologies. I've mostly done full-stack work on product + platform teams at large software and retail companies in the US.
                     </p>
                 </motion.div>
 
@@ -56,7 +56,7 @@ const Skills = () => {
             <div className="md:flex md:justify-between mt-16">
                 {/* front end skills */} 
                 <motion.div
-                    className="md:w-1/3 mt-5"
+                    className="w-1/3 mt-5"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -73,20 +73,21 @@ const Skills = () => {
                     </div>
                     <p>
                         <ul>
-                            <li>Vue + Nuxt</li>
-                            <li>React + Next</li>
-                            <li>Angular</li>
-                            <li>Javascript</li>
-                            <li>Redwood</li>
-                            <li>Storybook</li>
+                            <li>Vue / React / Angular</li>
+                            <li>Next.js / Nuxt.js</li>
+                            <li>SASS/SCSS and complex styling solutions</li>
+                            <li>Redwood.js</li>
+                            <li>Storybook server design and maintenance for component libraries</li>
                             <li>Gatsby</li>
                             <li>Typescript</li>
+                            <li>Tailwind + modern UI libraries</li>
+                            <li>Motion and animation libraries</li>
                         </ul>
                     </p>
                 </motion.div>
                 {/* back end skills */} 
                 <motion.div
-                    className="md:w-1/3 mt-5"
+                    className="mt-5 w-1/3"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -105,17 +106,18 @@ const Skills = () => {
                         <ul>
                             <li>Typescript</li>
                             <li>Java</li>
+                            <li>C#/.NET</li>
                             <li>Node</li>
                             <li>Python</li>
-                            <li>AWS</li>
-                            <li>Javascript</li>
-                            <li>Serverless</li>
+                            <li>AWS + Azure</li>
+                            <li>REST / GraphQL / SOAP Protocols</li>
+                            <li>User documentation and service monitoring</li>
                         </ul>
                     </p>
                 </motion.div>
                 {/* other skills */}
                 <motion.div
-                    className="md:w-1/3 mt-5"
+                    className="mt-5 w-1/3"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -140,7 +142,6 @@ const Skills = () => {
                         </ul>
                     </p>
                 </motion.div>
-
             </div>
         </section>
     )
