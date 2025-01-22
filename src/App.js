@@ -14,12 +14,30 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      if (window.scrollY === 0) setIsTopOfPage(true)
+      else setIsTopOfPage(false)
     }
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section")
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSelectedPage(entry.target.id)
+          }
+        })
+      },
+      { threshold: 0.6 }
+    )
+
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect();
+  })
 
   return (
     <div className="app bg-deep-blue">

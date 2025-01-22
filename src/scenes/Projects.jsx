@@ -29,7 +29,7 @@ const Projects = () => {
             {/* projects section */}
             <div className="md:flex md:justify-between mt-16 gap-32">
                 {/* project #1 */} 
-                <div className="flex-col items-center">
+                <div className="flex-col items-center w-1/3">
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -46,16 +46,22 @@ const Projects = () => {
                                 <p className="font-playfair font-semibold text-blush text-3xl">Fake News Detector</p>
                             </div>
                         </div>
-                        <div>
+                        <div className="mt-4">
                             <ul>
-                                <li>main tech points</li>
-                                <li>features</li>
+                                <li><a href="https://github.com/chelseymachin/capstone" rel="noreferrer" target="_blank">Github Repo</a></li>
+                                <li><a href="https://mybinder.org/v2/gh/chelseymachin/capstone/HEAD" rel="noreferrer" target="_blank">Interactive Jupyter Notebook</a></li>
+                            </ul>
+                            <ul className="mt-4">
+                                <li>- Built using python + tensorflow</li>
+                                <li>- Hosted in interactive Jupyter Notebook</li>
+                                <li>- Model trained on open source data</li>
+                                <li>- Compares new data against model to establish whether it matches traits of fake news</li>
                             </ul>
                         </div>
                     </motion.div>
                 </div>
                 {/* example project #2 */} 
-                <div className="flex-col items-center">
+                <div className="flex-col items-center w-1/3">
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -72,16 +78,22 @@ const Projects = () => {
                                 <p className="font-playfair font-semibold text-blush text-3xl">Package Delivery Service</p>
                             </div>
                         </div>
-                        <div>
+                        <div className="mt-4">
                             <ul>
-                                <li>main tech points</li>
-                                <li>features</li>
+                                <li><a href="https://github.com/chelseymachin/package-delivery-service" rel="noreferrer" target="_blank">Github Repo</a></li>
+                                <li><a href="https://replit.com/@ChelseyMachin/package-delivery-service" rel="noreferrer" target="_blank">Replit</a></li>
+                            </ul>
+                            <ul className="mt-4">
+                                <li>- CLI program built in Python</li>
+                                <li>- Hosted in replit through repo</li>
+                                <li>- Can be used with any appropriately formatted data; sample data given in replit</li>
+                                <li>- Dijkstra's shortest path algo implementation</li>
                             </ul>
                         </div>
                     </motion.div>
                 </div>
                 {/* example project #3 */} 
-                <div className="flex-col items-center">
+                <div className="flex-col items-center w-1/3">
                     <motion.div
                         className="w-full mt-5"
                         initial="hidden"
@@ -95,13 +107,10 @@ const Projects = () => {
                     >
                         <div className="relative h-18">
                             <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">Appointment Manager</p>                            </div>
+                                <p className="font-playfair font-semibold text-blush text-3xl">...</p>
+                            </div>
                         </div>
-                        <div>
-                            <ul>
-                                <li>main tech points</li>
-                                <li>features</li>
-                            </ul>
+                        <div className="mt-4">
                         </div>
                     </motion.div>
                 </div>
