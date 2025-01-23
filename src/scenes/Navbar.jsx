@@ -31,7 +31,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                         />
                         <Link
                             page="Resume"
-                            href="/assets/resume.pdf"
+                            href="https://u3u3u3.s3.us-west-1.amazonaws.com/Copy+of+1-chelsey-machin-resume-1.pdf"
                             isExternal={true}
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
@@ -75,7 +75,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                                 />
                                 <Link
                                     page="Resume"
-                                    href="/asssets/resume.pdf"
+                                    href="https://u3u3u3.s3.us-west-1.amazonaws.com/Copy+of+1-chelsey-machin-resume-1.pdf"
                                     isExternal={true}
                                     selectedPage={selectedPage}
                                     setSelectedPage={setSelectedPage}
