@@ -1,6 +1,5 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import Link from "../components/Link";
 
 const Projects = () => {
     return (
