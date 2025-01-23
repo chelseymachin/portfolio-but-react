@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import Link from "../components/Link";
 
 const Projects = () => {
     return (
@@ -48,8 +49,8 @@ const Projects = () => {
                         </div>
                         <div className="mt-4">
                             <ul>
-                                <li><a href="https://github.com/chelseymachin/capstone" rel="noreferrer" target="_blank">Github Repo</a></li>
-                                <li><a href="https://mybinder.org/v2/gh/chelseymachin/capstone/HEAD" rel="noreferrer" target="_blank">Interactive Jupyter Notebook</a></li>
+                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/capstone" rel="noreferrer" target="_blank">Github Repo</a></li>
+                                <li><a className="hover:text-green transition duration-500" href="https://mybinder.org/v2/gh/chelseymachin/capstone/HEAD" rel="noreferrer" target="_blank">Interactive Jupyter Notebook</a></li>
                             </ul>
                             <ul className="mt-4">
                                 <li>- Built using python + tensorflow</li>
@@ -80,8 +81,8 @@ const Projects = () => {
                         </div>
                         <div className="mt-4">
                             <ul>
-                                <li><a href="https://github.com/chelseymachin/package-delivery-service" rel="noreferrer" target="_blank">Github Repo</a></li>
-                                <li><a href="https://replit.com/@ChelseyMachin/package-delivery-service" rel="noreferrer" target="_blank">Replit</a></li>
+                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/package-delivery-service" rel="noreferrer" target="_blank">Github Repo</a></li>
+                                <li><a className="hover:text-green transition duration-500" href="https://replit.com/@ChelseyMachin/package-delivery-service" rel="noreferrer" target="_blank">Replit</a></li>
                             </ul>
                             <ul className="mt-4">
                                 <li>- CLI program built in Python</li>

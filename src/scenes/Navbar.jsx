@@ -1,35 +1,6 @@
 import { useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-
-const Link = ({ page, selectedPage, setSelectedPage, isExternal, href }) => {
-    const lowerCasePage = page?.toLowerCase()
-    const classes = `${
-        selectedPage === lowerCasePage ? "text-green" : ""
-      } hover:text-green transition duration-500`
-    
-    if (isExternal) {
-        return (
-          <a
-            className={classes}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {page}
-          </a>
-        );
-      }
-      return (
-        <AnchorLink
-          className={classes}
-          href={`#${lowerCasePage}`}
-          onClick={() => setSelectedPage(lowerCasePage)}
-        >
-          {page}
-        </AnchorLink>
-      )
-}
+import Link from "../components/Link";
 
 const Navbar = ({ selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
