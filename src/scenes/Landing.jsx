@@ -57,7 +57,7 @@ const Landing = () => {
                     </p>
 
                     <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                    Full-stack software engineer specializing in modern front-end frameworks and serverless back-ends
+                    Full-stack software engineer versed in modern front-end frameworks and scalable, compliant APIs
                     </p>
                 </motion.div>
 
