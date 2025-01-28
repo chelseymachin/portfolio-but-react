@@ -107,10 +107,19 @@ const Projects = () => {
                     >
                         <div className="relative h-18">
                             <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">...</p>
+                                <p className="font-playfair font-semibold text-blush text-3xl">Appointment Manager</p>
                             </div>
                         </div>
                         <div className="mt-4">
+                            <ul>
+                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/Appointment-Customer-Management-App" rel="noreferrer" target="_blank">Github Repo</a></li>
+                            </ul>
+                            <ul className="mt-4">
+                                <li>- Desktop program built in Java + JavaFX + Gradle</li>
+                                <li>- Not currently hosted as it requires local database setup</li>
+                                <li>- Utilizes modern interface options leveraged from a legacy library (JavaFX)</li>
+                                <li>- Full stack application including localization considerations</li>
+                            </ul>
                         </div>
                     </motion.div>
                 </div>
