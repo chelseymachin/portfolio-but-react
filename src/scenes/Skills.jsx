@@ -24,8 +24,8 @@ const Skills = () => {
                         SKILLS
                     </p>
                     <LineGradient width="w-1/3" />
-                    <p className="mt-10 mb-7">
-                        I have professional experience in a breadth of technologies. I've mostly done full-stack work on product + platform teams at large software and retail companies in the US.
+                    <p className="mt-10 mb-7 text-sm md:text-base">
+                        I've mostly done full-stack work on product + platform teams at large software and retail companies in the US.  My favorite thing about engineering is learning new things all the time, so this list is rather exhaustive.  It is comprised of most of the tech I've touched in projects at some point or another.
                     </p>
                 </motion.div>
 
@@ -53,10 +53,10 @@ const Skills = () => {
             </div>
 
             {/* skills section */}
-            <div className="md:flex md:justify-between mt-16">
+            <div className="flex flex-col md:flex-row md:justify-between mt-16 gap-10">
                 {/* front end skills */} 
                 <motion.div
-                    className="w-1/3 mt-5"
+                    className="w-full md:w-1/3 mt-5"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -72,7 +72,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <p>
-                        <ul>
+                        <ul className="list-disc pl-5 space-y-2 text-sm md:text-bas">
                             <li>Vue / React / Angular</li>
                             <li>Next.js / Nuxt.js</li>
                             <li>SASS/SCSS and complex styling solutions</li>
@@ -87,7 +87,7 @@ const Skills = () => {
                 </motion.div>
                 {/* back end skills */} 
                 <motion.div
-                    className="mt-5 w-1/3"
+                    className="w-full md:w-1/3 mt-5"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -103,7 +103,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <p>
-                        <ul>
+                        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                             <li>Typescript</li>
                             <li>Java</li>
                             <li>C#/.NET</li>
@@ -117,7 +117,7 @@ const Skills = () => {
                 </motion.div>
                 {/* other skills */}
                 <motion.div
-                    className="mt-5 w-1/3"
+                    className="w-full md:w-1/3 mt-5"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -133,7 +133,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <p>
-                        <ul>
+                        <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                             <li>Atlassian Suite (Jira, Trello, OpsGenie)</li>
                             <li>Agile + SAFE team structures</li>
                             <li>Comprehensive testing</li>

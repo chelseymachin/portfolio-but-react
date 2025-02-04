@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const Projects = () => {
     return (
         <section id="projects" className="pt-10 pb-24">
-          {/* header section */}
-          <div className="md:flex md:justify-between md:gap-16 mt-32">
+            {/* Header Section */}
+            <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
                     className="md:w-1/3"
                     initial="hidden"
@@ -21,17 +21,52 @@ const Projects = () => {
                         PROJECTS
                     </p>
                     <LineGradient />
-                    <p className="mt-10 mb-7">
-                        All projects below link to my indivudal github repositories.  Some of these projects are also individually hosted on various platforms.  If there is a live hosting of the project, that link will be available below the repository link.
+                    <p className="mt-10 mb-7 text-sm md:text-base">
+                        All projects below link to my individual GitHub repositories. Some of these projects are also hosted on various platforms. If there is a live hosting of the project, that link will be available below the repository link.
                     </p>
                 </motion.div>
             </div>  
-            {/* projects section */}
-            <div className="md:flex md:justify-between mt-16 gap-32">
-                {/* project #1 */} 
-                <div className="flex-col items-center w-1/3">
+
+            {/* Projects Section */}
+            <div className="flex flex-col md:flex-row md:justify-between mt-16 gap-10">
+                {/* Project Component */}
+                {[
+                    {
+                        title: "Fake News Detector",
+                        repo: "https://github.com/chelseymachin/capstone",
+                        live: "https://mybinder.org/v2/gh/chelseymachin/capstone/HEAD",
+                        details: [
+                            "Built using Python + TensorFlow",
+                            "Hosted in interactive Jupyter Notebook",
+                            "Model trained on open-source data",
+                            "Compares new data against model to detect fake news"
+                        ],
+                    },
+                    {
+                        title: "Package Delivery Service",
+                        repo: "https://github.com/chelseymachin/package-delivery-service",
+                        live: "https://replit.com/@ChelseyMachin/package-delivery-service",
+                        details: [
+                            "CLI program built in Python",
+                            "Hosted on Replit through repository",
+                            "Can be used with any appropriately formatted data; sample data provided",
+                            "Dijkstra's shortest path algorithm implementation"
+                        ],
+                    },
+                    {
+                        title: "Appointment Manager",
+                        repo: "https://github.com/chelseymachin/Appointment-Customer-Management-App",
+                        details: [
+                            "Desktop program built in Java + JavaFX + Gradle",
+                            "Not currently hosted as it requires local database setup",
+                            "Utilizes modern interface options leveraged from a legacy library (JavaFX)",
+                            "Full-stack application including localization considerations"
+                        ],
+                    }
+                ].map((project, index) => (
                     <motion.div
-                        className="w-full mt-5"
+                        key={index}
+                        className="w-full md:w-1/3 mt-5"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
@@ -42,90 +77,34 @@ const Projects = () => {
                         }}
                     >
                         <div className="relative h-18">
-                            <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">Fake News Detector</p>
-                            </div>
+                            <p className="font-playfair font-semibold text-blush text-3xl">{project.title}</p>
                         </div>
                         <div className="mt-4">
-                            <ul>
-                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/capstone" rel="noreferrer" target="_blank">Github Repo</a></li>
-                                <li><a className="hover:text-green transition duration-500" href="https://mybinder.org/v2/gh/chelseymachin/capstone/HEAD" rel="noreferrer" target="_blank">Interactive Jupyter Notebook</a></li>
+                            <ul className="text-sm md:text-base">
+                                <li>
+                                    <a className="hover:text-green transition duration-500" href={project.repo} rel="noreferrer" target="_blank">
+                                        GitHub Repo
+                                    </a>
+                                </li>
+                                {project.live && (
+                                    <li>
+                                        <a className="hover:text-green transition duration-500" href={project.live} rel="noreferrer" target="_blank">
+                                            Live Hosting
+                                        </a>
+                                    </li>
+                                )}
                             </ul>
-                            <ul className="mt-4">
-                                <li>- Built using python + tensorflow</li>
-                                <li>- Hosted in interactive Jupyter Notebook</li>
-                                <li>- Model trained on open source data</li>
-                                <li>- Compares new data against model to establish whether it matches traits of fake news</li>
+                            <ul className="list-disc pl-5 space-y-2 text-sm md:text-base mt-4">
+                                {project.details.map((detail, i) => (
+                                    <li key={i}>{detail}</li>
+                                ))}
                             </ul>
                         </div>
                     </motion.div>
-                </div>
-                {/* example project #2 */} 
-                <div className="flex-col items-center w-1/3">
-                    <motion.div
-                        className="w-full mt-5"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, y: 50 },
-                            visible: { opacity: 1, y: 0 },
-                        }}
-                    >
-                        <div className="relative h-18">
-                            <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">Package Delivery Service</p>
-                            </div>
-                        </div>
-                        <div className="mt-4">
-                            <ul>
-                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/package-delivery-service" rel="noreferrer" target="_blank">Github Repo</a></li>
-                                <li><a className="hover:text-green transition duration-500" href="https://replit.com/@ChelseyMachin/package-delivery-service" rel="noreferrer" target="_blank">Replit</a></li>
-                            </ul>
-                            <ul className="mt-4">
-                                <li>- CLI program built in Python</li>
-                                <li>- Hosted in replit through repo</li>
-                                <li>- Can be used with any appropriately formatted data; sample data given in replit</li>
-                                <li>- Dijkstra's shortest path algo implementation</li>
-                            </ul>
-                        </div>
-                    </motion.div>
-                </div>
-                {/* example project #3 */} 
-                <div className="flex-col items-center w-1/3">
-                    <motion.div
-                        className="w-full mt-5"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, y: 50 },
-                            visible: { opacity: 1, y: 0 },
-                        }}
-                    >
-                        <div className="relative h-18">
-                            <div className="z-10">
-                                <p className="font-playfair font-semibold text-blush text-3xl">Appointment Manager</p>
-                            </div>
-                        </div>
-                        <div className="mt-4">
-                            <ul>
-                                <li><a className="hover:text-green transition duration-500" href="https://github.com/chelseymachin/Appointment-Customer-Management-App" rel="noreferrer" target="_blank">Github Repo</a></li>
-                            </ul>
-                            <ul className="mt-4">
-                                <li>- Desktop program built in Java + JavaFX + Gradle</li>
-                                <li>- Not currently hosted as it requires local database setup</li>
-                                <li>- Utilizes modern interface options leveraged from a legacy library (JavaFX)</li>
-                                <li>- Full stack application including localization considerations</li>
-                            </ul>
-                        </div>
-                    </motion.div>
-                </div>
+                ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Projects;
